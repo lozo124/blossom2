@@ -139,22 +139,41 @@ ul {
 @media (min-width: 768px) {
   .hero-body { font-size: 17px; line-height: 25.5px; }
 }
-
 .hero-meta {
-  margin-top: 16px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0;
+  margin-top: 24px;
+  padding: 14px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
-@media (min-width: 768px) {
-  .hero-meta { grid-template-columns: 1fr 1fr; }
-}
-.hero-meta p {
+
+.hero-meta-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 15px;
-  line-height: 27px;
-  font-weight: 400;
+  line-height: 22px;
   color: rgb(77, 77, 77);
 }
+
+.hero-meta-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.hero-meta-right {
+  font-size: 15px;
+  line-height: 22px;
+  color: rgb(77, 77, 77);
+  white-space: nowrap;
+}
+
 
 /* ===== Shared section padding ===== */
 .section {
